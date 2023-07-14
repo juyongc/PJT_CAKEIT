@@ -1,7 +1,9 @@
 package cakeit.server.entity;
 
-import javax.persistence.*;
 import lombok.*;
+
+import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity
 @Builder
@@ -30,8 +32,8 @@ public class ReservationEntity extends AbstractEntity {
 	@JoinColumn(referencedColumnName = "STORE_ID", name = "STORE_ID")
 	private CakeStoreEntity storeId;
 
-   	@Column(name = "RESERVATION_DATE")
-	private java.sql.Timestamp reservationDate;
+	@Column(name = "RESERVATION_DATE")
+	private LocalDateTime reservationDate;
 
    	@Column(name = "RESERVATION_IMAGE")
 	private String reservationImage;
