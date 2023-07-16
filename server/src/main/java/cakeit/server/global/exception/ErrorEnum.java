@@ -70,7 +70,11 @@ public enum ErrorEnum {
     NOT_EXTENDED(HttpStatus.NOT_EXTENDED, "E510", "Not Extended"),
     NETWORK_AUTHENTICATION_REQUIRED(HttpStatus.NETWORK_AUTHENTICATION_REQUIRED, "E511", "Network Authentication Required"),
 
-    DATABASE_ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "E009", "Database Exception 발생");
+    DATABASE_ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "E009", "Database Exception 발생"),
+
+    // Custom Errors
+
+    ALREADY_BOOKED(HttpStatus.SERVICE_UNAVAILABLE, "RC001", "Already Reserved Time");
 
     private final HttpStatus httpStatus;
     private final String code;

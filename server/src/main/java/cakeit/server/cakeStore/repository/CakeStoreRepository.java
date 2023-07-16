@@ -7,4 +7,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface CakeStoreRepository extends JpaRepository<CakeStoreEntity, Long> {
 
+    CakeStoreEntity findByStoreName(String storeName);
+
 }
