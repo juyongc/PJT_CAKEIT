@@ -14,28 +14,37 @@ public class UserController {
     private final UserService userService;
 
     public UserController(UserService userService) {
-
         this.userService = userService;
     }
 
     @RequestMapping(value = "/user/join", method = RequestMethod.GET)
     public String join() {
-        log.info("조인 겟>>>");
-        return "회원가입 API 겟";
+        log.info("회원가입 API (GET) 성공");
+
+        return "회원가입 API (GET) 성공";
     }
 
     @RequestMapping(value = "/user/join", method = RequestMethod.POST)
     public String join(UserDto userDto) {
+        log.info("회원가입 폼 입력값 dto 알려줘>>>>>" + userDto);
 
-        log.info("dto 알려줘>>>>" + userDto);
+//        userDto.setUserId(6L);
+//        userDto.setLoginId("hayeon");
+//        userDto.setPassword("1234");
+//        userDto.setNickname("상큼한유자케이크");
+//        userDto.setProfileImage("file.jpg");
+//        userDto.setAge(94012420L);
+//        userDto.setGender("F");
+
         userService.join(userDto);
-        return "회원가입 성공";
+        return "회원가입 API (POST) 성공";
     }
 
     @RequestMapping(value = "/user/login", method = RequestMethod.GET)
     public String login() {
-        log.info("로그인폼은 왔어?>>>" );
-        return "/loginForm";
+        log.info("로그인 API (GET) 성공");
+
+        return "로그인 API (GET) 성공";
     }
 }
 

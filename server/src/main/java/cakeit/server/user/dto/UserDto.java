@@ -5,6 +5,9 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Column;
+import java.time.LocalDateTime;
+
 @Data
 @NoArgsConstructor
 public class UserDto {
@@ -14,8 +17,8 @@ public class UserDto {
     private String password;
     private String nickname;
     private Long age;
-    private String gender;
     private String profileImage;
+    private String gender;
 
     //User 객체로 변환
     public UserEntity toEntity() {
@@ -25,14 +28,14 @@ public class UserDto {
                 .password(password)
                 .nickname(nickname)
                 .age(age)
-                .profileImage(profileImage)//
+                .profileImage(profileImage)
                 .gender(gender)
                 .build();
     }
 
     @Builder
     public UserDto(Long userId, String loginId, String password, String nickname, Long age, String profileImage,
-                   String gender){
+                   String gender) {
         this.userId = userId;
         this.loginId = loginId;
         this.password = password;

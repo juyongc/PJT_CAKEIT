@@ -8,11 +8,12 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import java.util.Optional;
 
 public interface UserService {
+//    String join(UserDto userDto);
     void join(UserDto userDto);
 
     UserDetails login(String loginId);
 
-    UserDetails loadUserByUsername(String loginId) throws UsernameNotFoundException;
+    UserDetails loadUserByLoginId(String loginId) throws UsernameNotFoundException;
 
     Optional<UserEntity> findByLoginId(String loginId);
 
