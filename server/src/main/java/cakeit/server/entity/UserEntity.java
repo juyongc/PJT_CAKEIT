@@ -3,12 +3,16 @@ package cakeit.server.entity;
 import javax.persistence.*;
 import lombok.*;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 @Entity
 @Builder
 @Getter
 @ToString
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
+//@Table (name = "USERS", indexes = {@Index(name="nickname_index", columnList = "NICKNAME")})
 @Table (name = "USERS")
 public class UserEntity extends AbstractEntity {
 
@@ -35,5 +39,10 @@ public class UserEntity extends AbstractEntity {
    	@Column(name = "PROFILE_IMAGE")
 	private String profileImage;
 
+	@Column(name = "IS_DELETED")
+	private boolean isDeleted;
+
+	@Column(name = "DELETED_AT")
+	private LocalDateTime deletedAt;
 
 }

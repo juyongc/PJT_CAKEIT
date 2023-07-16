@@ -41,5 +41,8 @@ public class ReservationEntity extends AbstractEntity {
    	@Column(name = "RESERVATION_DETAIL")
 	private String reservationDetail;
 
+	/** 예약 케이크점 & 일시 확인을 위한 대리키 */
+   	@Column(name = "RESERVATION_CHECK")
+	private String reservationCheck;
 
 }

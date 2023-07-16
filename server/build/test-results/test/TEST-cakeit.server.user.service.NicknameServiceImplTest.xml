@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cakeit.server.user.service.NicknameServiceImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-14T12:17:13" hostname="juyongchun-B365M-D3H" time="0.161">
+  <properties/>
+  <testcase name="addRandomRickname()" classname="cakeit.server.user.service.NicknameServiceImplTest" time="0.161"/>
+  <system-out><![CDATA[21:17:10.674 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+21:17:10.682 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+21:17:10.706 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [cakeit.server.user.service.NicknameServiceImplTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+21:17:10.714 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [cakeit.server.user.service.NicknameServiceImplTest], using SpringBootContextLoader
+21:17:10.717 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [cakeit.server.user.service.NicknameServiceImplTest]: class path resource [cakeit/server/user/service/NicknameServiceImplTest-context.xml] does not exist
+21:17:10.718 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [cakeit.server.user.service.NicknameServiceImplTest]: class path resource [cakeit/server/user/service/NicknameServiceImplTestContext.groovy] does not exist
+21:17:10.718 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [cakeit.server.user.service.NicknameServiceImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:17:10.718 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [cakeit.server.user.service.NicknameServiceImplTest]: NicknameServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:17:10.751 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [cakeit.server.user.service.NicknameServiceImplTest]
+21:17:10.792 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/juyong_chuntmaxcokr/juyongc/cakeit/server/build/classes/java/main/cakeit/server/ServerApplication.class]
+21:17:10.792 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration cakeit.server.ServerApplication for test class cakeit.server.user.service.NicknameServiceImplTest
+21:17:10.859 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [cakeit.server.user.service.NicknameServiceImplTest]: using defaults.
+21:17:10.859 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+21:17:10.871 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7a8fa663, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5ce33a58, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@78a287ed, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@546ccad7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5357c287, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1623134f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7a527389, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@485a3466, org.springframework.test.context.event.EventPublishingTestExecutionListener@25748410, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2b43529a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4264b240, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5b04476e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5ad10c1a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6bb75258, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@c260bdc]
+21:17:10.874 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@29e6eb25 testClass = NicknameServiceImplTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@62435e70 testClass = NicknameServiceImplTest, locations = '{}', classes = '{class cakeit.server.ServerApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@6cc558c6, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@73cd37c0, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5a2d131d, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1c93f6e1, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5ba88be8, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@fa36558], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.13)
+
+2023-07-14 21:17:11.090  INFO 17388 --- [    Test worker] c.s.u.service.NicknameServiceImplTest    : Starting NicknameServiceImplTest using Java 11.0.19 on juyongchun-B365M-D3H with PID 17388 (started by juyong_chuntmaxcokr in /home/juyong_chuntmaxcokr/juyongc/cakeit/server)
+2023-07-14 21:17:11.091  INFO 17388 --- [    Test worker] c.s.u.service.NicknameServiceImplTest    : No active profile set, falling back to 1 default profile: "default"
+2023-07-14 21:17:11.466  INFO 17388 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-14 21:17:11.511  INFO 17388 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 4 JPA repository interfaces.
+2023-07-14 21:17:11.805  INFO 17388 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-14 21:17:11.829  INFO 17388 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-07-14 21:17:11.933  INFO 17388 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-14 21:17:11.996  INFO 17388 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-14 21:17:12.192  INFO 17388 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-14 21:17:12.202  INFO 17388 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-07-14 21:17:12.649  INFO 17388 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-14 21:17:12.654  INFO 17388 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-14 21:17:13.048  WARN 17388 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-14 21:17:13.366  INFO 17388 --- [    Test worker] c.s.u.service.NicknameServiceImplTest    : Started NicknameServiceImplTest in 2.469 seconds (JVM running for 3.159)
+Hibernate: 
+    select
+        count(nickcakeen0_.nick_cake_id) as col_0_0_ 
+    from
+        nic_cake nickcakeen0_
+2023-07-14 21:17:13.476 TRACE 17388 --- [    Test worker] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [30]
+Hibernate: 
+    select
+        count(nickadject0_.nick_adj_id) as col_0_0_ 
+    from
+        nic_adjective nickadject0_
+2023-07-14 21:17:13.481 TRACE 17388 --- [    Test worker] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [30]
+Hibernate: 
+    select
+        nickcakeen0_.nick_cake_id as nick_cak1_4_0_,
+        nickcakeen0_.word as word2_4_0_ 
+    from
+        nic_cake nickcakeen0_ 
+    where
+        nickcakeen0_.nick_cake_id=?
+2023-07-14 21:17:13.494 TRACE 17388 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [15]
+2023-07-14 21:17:13.500 TRACE 17388 --- [    Test worker] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([word2_4_0_] : [VARCHAR]) - [자허토르테라]
+Hibernate: 
+    select
+        nickadject0_.nick_adj_id as nick_adj1_3_0_,
+        nickadject0_.word as word2_3_0_ 
+    from
+        nic_adjective nickadject0_ 
+    where
+        nickadject0_.nick_adj_id=?
+2023-07-14 21:17:13.505 TRACE 17388 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [8]
+2023-07-14 21:17:13.506 TRACE 17388 --- [    Test worker] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([word2_3_0_] : [VARCHAR]) - [향긋한]
+Hibernate: 
+    select
+        userentity0_.user_id as col_0_0_ 
+    from
+        users userentity0_ 
+    where
+        userentity0_.nickname=? limit ?
+2023-07-14 21:17:13.526 TRACE 17388 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [향긋한 자허토르테라]
+향긋한 자허토르테라
+Hibernate: 
+    select
+        userentity0_.user_id as col_0_0_ 
+    from
+        users userentity0_ 
+    where
+        userentity0_.nickname=? limit ?
+2023-07-14 21:17:13.530 TRACE 17388 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [향긋한 자허토르테라]
+false
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
