@@ -14,7 +14,7 @@
 - Spring boot, Spring Security, Spring Data JPA, MYSQL
 <br>
 
-## 🖥 담당 업무
+## 담당 업무
 
 
 ### Optimistic **lock & 기본키를 활용한 동시성 문제 해결**
