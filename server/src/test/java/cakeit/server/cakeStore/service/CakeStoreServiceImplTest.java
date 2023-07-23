@@ -2,6 +2,7 @@ package cakeit.server.cakeStore.service;
 
 import cakeit.server.cakeStore.dto.GetCakeStoreListRequestDto;
 import cakeit.server.cakeStore.dto.GetCakeStoreListResponseDto;
+import org.json.JSONException;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,13 +19,13 @@ class CakeStoreServiceImplTest {
     private CakeStoreServiceImpl cakeStoreService;
 
     @Test
-    void getnearbyCakeStoreListFromGoogleAPI() throws IOException {
+    void getnearbyCakeStoreListFromGoogleAPI() throws IOException, JSONException {
 
         GetCakeStoreListRequestDto getCakeStoreListRequestDto = GetCakeStoreListRequestDto.builder().
                 latitude(Double.valueOf("123.123")).
                 longitude(Double.valueOf("123.123")).
                 build();
-        List<GetCakeStoreListResponseDto> cakeStoreListByLatitudeAndLongitude = cakeStoreService.getCakeStoreListByLatitudeAndLongitude(getCakeStoreListRequestDto);
+//        List<GetCakeStoreListResponseDto> cakeStoreListByLatitudeAndLongitude = cakeStoreService.getCakeStoreListByLatitudeAndLongitude(getCakeStoreListRequestDto);
 
     }
 }

@@ -17,6 +17,9 @@ public class CakeStoreEntity extends AbstractEntity {
 	@Column(name = "STORE_ID")
 	private Long storeId;
 
+	@Column(name = "PLACE_ID")
+	private String placeId;
+
    	@Column(name = "STORE_NAME")
 	private String storeName;
 
