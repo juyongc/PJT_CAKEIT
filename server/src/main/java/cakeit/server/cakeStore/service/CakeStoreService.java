@@ -1,4 +1,13 @@
 package cakeit.server.cakeStore.service;
 
+import cakeit.server.cakeStore.dto.GetCakeStoreListRequestDto;
+import cakeit.server.cakeStore.dto.GetCakeStoreListResponseDto;
+import cakeit.server.entity.CakeStoreEntity;
+
+import java.io.IOException;
+import java.util.List;
+
 public interface CakeStoreService {
+
+    public List<GetCakeStoreListResponseDto> getCakeStoreListByLatitudeAndLongitude(GetCakeStoreListRequestDto getCakeStoreListRequestDto) throws IOException;
 }
